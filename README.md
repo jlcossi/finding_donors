@@ -2,6 +2,39 @@
 # Supervised Learning
 ## Project: Finding Donors for CharityML
 
+### Problem
+
+CharityML is a fictitious charity organization located in the heart of Silicon Valley that was established to provide financial support for people eager to learn machine learning. After nearly 32,000 letters were sent to people in the community, CharityML determined that every donation they received came from someone that was making more than $50,000 annually. To expand their potential donor base, CharityML has decided to send letters to residents of California, but to only those most likely to donate to the charity. With nearly 15 million working Californians, CharityML has brought us on board to help build an algorithm to best identify potential donors and reduce overhead cost of sending mail.    
+Our goal here is to evaluate and optimize several different supervised learners to determine which algorithm will provide the highest donation yield while also reducing the total number of letters being sent.
+
+### Models choice
+
+After an exploration and a preparation (transforming skewed continuous features, normalizing numerical features, preprocessing) of the data, we choose three models to evaluate.   
+Commonly, Decision Trees are weak learners. They used to have high variance and low bias. Findind a way to optimize both variance and bias requires to use Ensemble models. So we test Bagging to mitigate the variance and Boosting for the bias. First we choose Random Forest which is an improvement over bagging. Regarding the boosting, AdaBoost and GradientBoosting have two different ways on working on the weak learners, so we try both of them.    
+
+### Implementation Results
+
+#### Performance metrics
+
+images/supervised_learning_models_metrics.png 
+
+
+GradientBoosting is the most approriate model for the task of identifying individuals that make more than $50,000   
+
+
+#### Tuning Results
+
+|     Metric     | Unoptimized Model | Optimized Model |
+| :------------: | :---------------: | :-------------: | 
+| Accuracy Score |      0.8630       |    0.8678       |
+| F-score        |      0.7395       |    0.7469       |
+
+
+#### Extracting feature importance
+
+images/1st_5_most_predictive_features_weights.png
+
+
 ### Install
 
 This project requires **Python 3.x** and the following Python libraries installed:
