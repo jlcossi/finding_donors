@@ -16,7 +16,7 @@ Commonly, Decision Trees are weak learners. They used to have high variance and 
 
 #### Performance metrics
 
-images/supervised_learning_models_metrics.png 
+![image info](images/supervised_learning_models_metrics.png) 
 
 
 GradientBoosting is the most approriate model for the task of identifying individuals that make more than $50,000   
@@ -32,7 +32,7 @@ GradientBoosting is the most approriate model for the task of identifying indivi
 
 #### Extracting feature importance
 
-images/1st_5_most_predictive_features_weights.png
+![image info](images/1st_5_most_predictive_features_weights.png)
 
 
 ### Install
