@@ -24,6 +24,7 @@ GradientBoosting is the most approriate model for the task of identifying indivi
 
 #### Tuning Results
 
+
 |     Metric     | Unoptimized Model | Optimized Model |
 | :------------: | :---------------: | :-------------: | 
 | Accuracy Score |      0.8630       |    0.8678       |
@@ -31,6 +32,8 @@ GradientBoosting is the most approriate model for the task of identifying indivi
 
 
 #### Extracting feature importance
+
+We implemented a feature importance extraction using the GradientBoosting Classifier.   
 
 ![image info](images/1st_5_most_predictive_features_weights.png)
 
