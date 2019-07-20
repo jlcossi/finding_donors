@@ -45,7 +45,8 @@ def distribution(data, transformed = False):
             fontsize = 16, y = 1.03)
 
     fig.tight_layout()
-    fig.show()
+    # not needed as we use matplotlib inline
+    # fig.show()
 
 
 def evaluate(results, accuracy, f1):
